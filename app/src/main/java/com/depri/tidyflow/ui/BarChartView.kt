@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 import com.depri.tidyflow.R
 import kotlin.math.max
 
-/** Простая столбчатая диаграмма без сторонних библиотек. Последний столбец (сегодня) выделен. */
+// Простая столбчатая диаграмма
 class BarChartView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,

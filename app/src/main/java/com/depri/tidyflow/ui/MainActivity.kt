@@ -22,7 +22,6 @@ import java.time.format.DateTimeFormatter
 
 /** Главный экран: сетка привычек на день или таблица на неделю. */
 class MainActivity : BaseActivity() {
-
     private lateinit var binding: ActivityMainBinding
     private var userId = -1L
     private var selectedDate: LocalDate = LocalDate.now()

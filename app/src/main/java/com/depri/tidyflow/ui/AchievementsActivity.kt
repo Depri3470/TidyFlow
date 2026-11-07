@@ -10,7 +10,7 @@ import com.depri.tidyflow.util.Game
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 
-/** Экран достижений (ачивок). */
+// Экран достижений (ачивок).
 class AchievementsActivity : BaseActivity() {
 
     private lateinit var binding: ActivityAchievementsBinding

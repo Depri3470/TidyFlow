@@ -13,7 +13,7 @@ import com.depri.tidyflow.databinding.ItemHabitDayBinding
 import com.depri.tidyflow.util.HabitColors
 import com.depri.tidyflow.util.HabitIcons
 
-/** Сетка привычек на выбранный день (2 колонки). */
+// Сетка привычек на выбранный день (2 колонки).
 class DayHabitAdapter(
     private val onClick: (HabitDayItem, View) -> Unit,
     private val onLongClick: (HabitDayItem) -> Unit
