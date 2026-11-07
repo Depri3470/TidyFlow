@@ -7,10 +7,8 @@
 - Android Gradle Plugin 8.7.3, Kotlin 2.0.21, Gradle 8.9, JDK 17
 - Тёмная монохромная тема (чёрно-белые акценты), Material 3, ViewBinding, Room (KSP), Coroutines
 
-## Как открыть
-1. Распаковать архив.
-2. Android Studio → **File → Open** → папка `TidyFlow`.
-3. Дождаться Gradle Sync (нужен интернет) → **Run ▶**.
+## Установка
+- Через APK-файл в релизах этого репозитория
 
 ## Экраны (Activity ↔ layout)
 | Экран по ТЗ | Activity | Layout |
