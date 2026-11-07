@@ -1,7 +1,7 @@
 # TidyFlow — трекер привычек и задач с геймификацией
 
 Нативное Android-приложение на **Kotlin** с разметкой на **XML**:
-каждый экран — отдельная `Activity` со своим layout-файлом.
+каждый экран — отдельная `Activity` со своим layout-файлом. Сделано с небольшой помощью Claude.
 
 - `compileSdk = 35`, `targetSdk = 35`, `minSdk = 26`
 - Android Gradle Plugin 8.7.3, Kotlin 2.0.21, Gradle 8.9, JDK 17
