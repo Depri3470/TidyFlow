@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.depri.tidyflow.R
 import com.depri.tidyflow.databinding.ItemAchievementBinding
 import com.depri.tidyflow.util.Achievement
 
@@ -20,7 +21,7 @@ class AchievementAdapter : ListAdapter<Achievement, AchievementAdapter.VH>(Achie
         val b = holder.b
         val value = minOf(item.current, item.target)
 
-        b.tvEmoji.text = if (item.unlocked) item.emoji else "🔒"
+        b.ivIcon.setImageResource(if (item.unlocked) item.iconRes else R.drawable.ic_lock)
         b.root.alpha = if (item.unlocked) 1f else 0.65f
         b.tvTitle.setText(item.titleRes)
         b.tvDesc.setText(item.descRes)

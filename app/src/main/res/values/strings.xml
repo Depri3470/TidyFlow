@@ -29,7 +29,7 @@
     <string name="err_wrong_credentials">Неверный email или пароль</string>
 
     <!-- Главный экран -->
-    <string name="greeting">Привет, %1$s 👋</string>
+    <string name="greeting">Привет, %1$s</string>
     <string name="level_fmt">Уровень %1$d</string>
     <string name="xp_fmt">%1$d / %2$d XP</string>
     <string name="mode_day">День</string>
@@ -37,10 +37,10 @@
     <string name="progress_fmt">Выполнено %1$d из %2$d</string>
     <string name="hint_tap">Нажмите — отметить, удерживайте — изменить</string>
     <string name="empty_habits">Здесь пока пусто.\nНажмите «+», чтобы добавить привычку</string>
-    <string name="xp_earned">+%1$d XP 🎉</string>
-    <string name="level_up">Новый уровень: %1$d! 🚀</string>
+    <string name="xp_earned">+%1$d XP</string>
+    <string name="level_up">Новый уровень: %1$d!</string>
     <string name="today">Сегодня</string>
-    <string name="streak_days">🔥 %1$d дн.</string>
+    <string name="streak_days">Серия: %1$d дн.</string>
     <string name="no_streak">Начните серию</string>
 
     <!-- Навигация -->

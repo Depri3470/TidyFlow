@@ -12,6 +12,7 @@ import com.depri.tidyflow.R
 import com.depri.tidyflow.databinding.ItemHabitWeekBinding
 import com.depri.tidyflow.util.DateUtils
 import com.depri.tidyflow.util.HabitColors
+import com.depri.tidyflow.util.HabitIcons
 import java.time.LocalDate
 
 /** Таблица «привычка × 7 дней недели». */
@@ -33,7 +34,8 @@ class WeekHabitAdapter(
         val color = HabitColors.get(item.habit.colorIndex)
         val today = LocalDate.now()
 
-        b.tvEmoji.text = item.habit.emoji
+        b.ivIcon.setImageResource(HabitIcons.res(item.habit.icon))
+        b.ivIcon.imageTintList = ColorStateList.valueOf(color)
         b.tvTitle.text = item.habit.title
         b.rowRoot.setOnLongClickListener {
             onLongClick(item)

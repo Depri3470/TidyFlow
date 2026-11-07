@@ -13,6 +13,7 @@ import com.depri.tidyflow.R
 import com.depri.tidyflow.data.Habit
 import com.depri.tidyflow.databinding.ActivityHabitEditBinding
 import com.depri.tidyflow.util.HabitColors
+import com.depri.tidyflow.util.HabitIcons
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 
@@ -63,9 +64,9 @@ class HabitEditActivity : BaseActivity() {
         binding.etTitle.setText(habit.title)
         binding.etNote.setText(habit.note)
 
-        for (child in binding.emojiGroup.children) {
-            if (child is Chip && child.text.toString() == habit.emoji) {
-                binding.emojiGroup.check(child.id)
+        for (child in binding.iconGroup.children) {
+            if (child is Chip && child.tag == habit.icon) {
+                binding.iconGroup.check(child.id)
             }
         }
         colorIndex = habit.colorIndex
@@ -122,8 +123,8 @@ class HabitEditActivity : BaseActivity() {
             return
         }
 
-        val emoji = binding.emojiGroup
-            .findViewById<Chip>(binding.emojiGroup.checkedChipId)?.text?.toString() ?: "✅"
+        val icon = binding.iconGroup
+            .findViewById<Chip>(binding.iconGroup.checkedChipId)?.tag as? String ?: HabitIcons.DEFAULT
 
         lifecycleScope.launch {
             val current = existing
@@ -133,7 +134,7 @@ class HabitEditActivity : BaseActivity() {
                         userId = userId,
                         title = title,
                         note = note,
-                        emoji = emoji,
+                        icon = icon,
                         colorIndex = colorIndex,
                         daysMask = mask,
                         createdAt = LocalDate.now().toString()
@@ -144,7 +145,7 @@ class HabitEditActivity : BaseActivity() {
                     current.copy(
                         title = title,
                         note = note,
-                        emoji = emoji,
+                        icon = icon,
                         colorIndex = colorIndex,
                         daysMask = mask
                     )

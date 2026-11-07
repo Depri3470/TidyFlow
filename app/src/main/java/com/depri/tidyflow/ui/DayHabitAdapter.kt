@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.depri.tidyflow.R
 import com.depri.tidyflow.databinding.ItemHabitDayBinding
 import com.depri.tidyflow.util.HabitColors
+import com.depri.tidyflow.util.HabitIcons
 
 /** Сетка привычек на выбранный день (2 колонки). */
 class DayHabitAdapter(
@@ -29,7 +30,8 @@ class DayHabitAdapter(
         val ctx = b.root.context
         val color = HabitColors.get(item.habit.colorIndex)
 
-        b.tvEmoji.text = item.habit.emoji
+        b.ivIcon.setImageResource(HabitIcons.res(item.habit.icon))
+        b.ivIcon.imageTintList = ColorStateList.valueOf(color)
         b.tvTitle.text = item.habit.title
         b.tvStreak.text = if (item.streak > 0) {
             ctx.getString(R.string.streak_days, item.streak)

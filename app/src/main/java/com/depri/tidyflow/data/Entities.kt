@@ -31,7 +31,7 @@ data class Habit(
     val userId: Long,
     val title: String,
     val note: String = "",
-    val emoji: String,
+    val icon: String, // ключ иконки (см. HabitIcons)
     val colorIndex: Int,
     val daysMask: Int,
     val createdAt: String // ISO-дата, например 2026-11-03

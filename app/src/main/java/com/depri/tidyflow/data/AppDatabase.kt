@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [User::class, Habit::class, HabitLog::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -26,7 +26,8 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "tidyflow.db"
-                ).build().also { instance = it }
+                ).fallbackToDestructiveMigration()
+                    .build().also { instance = it }
             }
     }
 }
