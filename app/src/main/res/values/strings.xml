@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TidyFlow</string>
+    <string name="tagline">Привычки без стресса</string>
+    <string name="cd_back">Назад</string>
+    <string name="cd_logout">Выйти</string>
+    <string name="cd_add_habit">Добавить привычку</string>
+    <string name="cd_prev">Назад по времени</string>
+    <string name="cd_next">Вперёд по времени</string>
+
+    <!-- Авторизация -->
+    <string name="login_title">С возвращением!</string>
+    <string name="login_subtitle">Войдите, чтобы продолжить свой путь</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_confirm">Повторите пароль</string>
+    <string name="btn_login">Войти</string>
+    <string name="no_account">Нет аккаунта? Зарегистрироваться</string>
+    <string name="register_title">Создать аккаунт</string>
+    <string name="register_subtitle">Начните формировать полезные привычки</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="have_account">Уже есть аккаунт? Войти</string>
+    <string name="err_empty">Заполните поле</string>
+    <string name="err_email">Неверный формат email</string>
+    <string name="err_password_short">Минимум 6 символов</string>
+    <string name="err_password_mismatch">Пароли не совпадают</string>
+    <string name="err_email_taken">Этот email уже зарегистрирован</string>
+    <string name="err_wrong_credentials">Неверный email или пароль</string>
+
+    <!-- Главный экран -->
+    <string name="greeting">Привет, %1$s 👋</string>
+    <string name="level_fmt">Уровень %1$d</string>
+    <string name="xp_fmt">%1$d / %2$d XP</string>
+    <string name="mode_day">День</string>
+    <string name="mode_week">Неделя</string>
+    <string name="progress_fmt">Выполнено %1$d из %2$d</string>
+    <string name="hint_tap">Нажмите — отметить, удерживайте — изменить</string>
+    <string name="empty_habits">Здесь пока пусто.\nНажмите «+», чтобы добавить привычку</string>
+    <string name="xp_earned">+%1$d XP 🎉</string>
+    <string name="level_up">Новый уровень: %1$d! 🚀</string>
+    <string name="today">Сегодня</string>
+    <string name="streak_days">🔥 %1$d дн.</string>
+    <string name="no_streak">Начните серию</string>
+
+    <!-- Навигация -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_stats">Статистика</string>
+    <string name="nav_achievements">Достижения</string>
+
+    <!-- Редактирование привычки -->
+    <string name="title_new">Новая привычка</string>
+    <string name="title_edit">Редактирование</string>
+    <string name="hint_habit_title">Название привычки</string>
+    <string name="hint_note">Заметка (необязательно)</string>
+    <string name="label_icon">Иконка</string>
+    <string name="label_color">Цвет</string>
+    <string name="label_days">Дни недели</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_delete">Удалить привычку</string>
+    <string name="delete_title">Удалить привычку?</string>
+    <string name="delete_message">Вся история выполнения будет удалена.</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="err_pick_day">Выберите хотя бы один день</string>
+    <string name="day_mon">Пн</string>
+    <string name="day_tue">Вт</string>
+    <string name="day_wed">Ср</string>
+    <string name="day_thu">Чт</string>
+    <string name="day_fri">Пт</string>
+    <string name="day_sat">Сб</string>
+    <string name="day_sun">Вс</string>
+
+    <!-- Статистика -->
+    <string name="stats_title">Статистика</string>
+    <string name="stat_total">Всего выполнено</string>
+    <string name="stat_streak">Текущая серия</string>
+    <string name="stat_best">Лучшая серия</string>
+    <string name="stat_week">За 7 дней</string>
+    <string name="chart_title">Выполнения за 7 дней</string>
+    <string name="level_xp_fmt">Уровень %1$d · %2$d XP</string>
+    <string name="days_fmt">%1$d дн.</string>
+    <string name="percent_fmt">%1$d%%</string>
+
+    <!-- Достижения -->
+    <string name="achievements_title">Достижения</string>
+    <string name="ach_opened">Открыто: %1$d из %2$d</string>
+    <string name="ach_first_title">Первый шаг</string>
+    <string name="ach_first_desc">Отметьте первую привычку</string>
+    <string name="ach_streak3_title">Разгон</string>
+    <string name="ach_streak3_desc">Серия из 3 дней подряд</string>
+    <string name="ach_streak7_title">Неделя силы</string>
+    <string name="ach_streak7_desc">Серия из 7 дней подряд</string>
+    <string name="ach_ten_title">Десять побед</string>
+    <string name="ach_ten_desc">Выполните привычки 10 раз</string>
+    <string name="ach_fifty_title">Полтинник</string>
+    <string name="ach_fifty_desc">Выполните привычки 50 раз</string>
+    <string name="ach_planner_title">Планировщик</string>
+    <string name="ach_planner_desc">Создайте 3 привычки</string>
+    <string name="ach_level_title">Растём!</string>
+    <string name="ach_level_desc">Достигните 3 уровня</string>
+</resources>
